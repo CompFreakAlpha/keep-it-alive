@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3167627889728441186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3167627889728441184}
+  - component: {fileID: 3167627889728441187}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3167627889728441184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167627889728441186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3167627889728441187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167627889728441186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7466de7a8fcb0d54ba602f3089629670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 24300002, guid: 0387bf921aafa7b4784e5d5809c496ee, type: 2}
+  sounds:
+  - name: wave_new
+    clip: {fileID: 8300000, guid: f3504fced7896884599fcbfed0dc03a2, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: coin_pickup
+    clip: {fileID: 8300000, guid: 4c3d8e07784ceff4c8ba0eae37f20bab, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0.25
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: soldier_death
+    clip: {fileID: 8300000, guid: b8f0b7ea48462cf44a05bed5e48b9830, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: sword_slash
+    clip: {fileID: 8300000, guid: c17fbdb61ff8f4a449e6b393842961d6, type: 3}
+    volume: 1
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: king_hurt
+    clip: {fileID: 8300000, guid: de8d5cd87a44fb140a5133a1cc4ca717, type: 3}
+    volume: 1
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: entity_death
+    clip: {fileID: 8300000, guid: a202b69d78ef93544a7eddb866539cde, type: 3}
+    volume: 1
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: upgrade_select
+    clip: {fileID: 8300000, guid: 4f46ab0490e67304aa64dc6b4ee613a5, type: 3}
+    volume: 1
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: background_music
+    clip: {fileID: 8300000, guid: c66357067ee7cf94794279e6bb6637c1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: -3806176532974925232, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: menu_select
+    clip: {fileID: 8300000, guid: b9badd9f60966604c9d6067ebb3fd32a, type: 3}
+    volume: 1
+    volumeVariance: 0.2
+    pitch: 1
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: king_speech
+    clip: {fileID: 8300000, guid: 0fc44607c5994b843a5bfb56c021db16, type: 3}
+    volume: 1
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
+  - name: section_won
+    clip: {fileID: 8300000, guid: befee31ad37f1314f956211ce361e911, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -5965243765751338140, guid: 0387bf921aafa7b4784e5d5809c496ee,
+      type: 2}
+    source: {fileID: 0}
