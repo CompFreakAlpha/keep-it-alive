@@ -50,6 +50,9 @@ public class EntityKing : Entity
     {
         Instantiate(Resources.Load<GameObject>("Prefabs/FX/DeathParticles"), transform.position, Quaternion.identity);
         Destroy(transform.Find("King").gameObject);
+
+        GameObject.FindGameObjectWithTag("HUDCanvas").GetComponent<HUDCanvas>().OnKingDeath();
+
         Destroy(this);
     }
 }

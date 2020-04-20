@@ -21,7 +21,6 @@ public class ItemDatabase : MonoBehaviour
         }
 
         instance = this;
-        DontDestroyOnLoad(this.gameObject);
 
         PreInitializeItemDatabase();
     }

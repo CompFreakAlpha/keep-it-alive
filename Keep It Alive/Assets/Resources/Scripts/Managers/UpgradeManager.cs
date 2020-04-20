@@ -23,7 +23,6 @@ public class UpgradeManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(this.gameObject);
     }
 
     public void AddUpgrade(Upgrade upgrade)

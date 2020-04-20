@@ -45,7 +45,6 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(this.gameObject);
     }
 
     private void UpdateMouseCursorPos()

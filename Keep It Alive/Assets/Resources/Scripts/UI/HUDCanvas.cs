@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class HUDCanvas : MonoBehaviour
 {
@@ -19,6 +20,20 @@ public class HUDCanvas : MonoBehaviour
     void Start()
     {
 
+    }
+
+    public void OnKingDeath()
+    {
+        StartCoroutine(KingDeath());
+    }
+
+    IEnumerator KingDeath()
+    {
+        Time.timeScale = 0;
+        transform.Find("YouDied").GetComponent<RectTransform>().DOLocalMoveY(0, 0.5f).SetUpdate(true);
+        yield return new WaitForSecondsRealtime(4);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(0);
     }
 
 

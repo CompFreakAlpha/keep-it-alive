@@ -58,7 +58,6 @@ public class SoldierManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(this.gameObject);
     }
 
     private void SetDefaultSoldier()
